@@ -24,7 +24,7 @@ class FamilyStructure:
             "last_name": last_name,
             "age": 35,
             "lucky numbers": [10,14,3]},
-            {"id": self._generateId(),
+            {"id": 5,
             "first_name":"Jimmy",
             "last_name": last_name,
             "age": 5,
@@ -51,7 +51,12 @@ class FamilyStructure:
 
     def get_member(self, id):
         # fill this method and update the return
-        pass
+        for element in self._members:
+            for e in element.values():
+                if e == (id):
+                   return element
+        
+        
 
     # this method is done, it returns a list with all the family members
     def get_all_members(self):
@@ -66,11 +71,12 @@ class FamilyStructure:
 # }
 
 
-# family = FamilyStructure(last_name="Jackson")
-# #print(family.last_name)
-# print(family.get_all_members())
-# family.delete_member(4)
-# family.add_member(member)
-# print(family.get_all_members())
+#family = FamilyStructure(last_name="Jackson")
+#print(family.last_name)
+#print(family.get_all_members())
+#family.delete_member(4)
+#family.add_member(member)
+#print(family.get_all_members())
+#print(family.get_member(5))
 
 
